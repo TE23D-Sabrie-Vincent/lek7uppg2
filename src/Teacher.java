@@ -8,4 +8,13 @@ public class Teacher extends SkolPersoner {
         super(namn, ålder);
     }
 
+    public void läggTillKurs(String kurs){
+        kurser.add(kurs);
+    }
+
+    @Override
+    public String toString(){
+        return "Lärare: " + super.toString() + ", kurser: " + kurser;
+    }
+
 }
